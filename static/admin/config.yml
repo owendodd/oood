@@ -23,11 +23,19 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Intro", name: "intro", widget: "text" }
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Bio", name: "bio", widget: "text" }
           - label: "Background"
             name: "background"
             widget: "object" 
             fields: 
-            - { label: "Background Video", name: "bgvideo", widget: "video" }
+            - { label: "Background Video", name: "bgvideo", widget: "file" }
             - { label: "Background Placeholder", name: "bgplaceholder", widget: "image"}
+          - label: "Bio Links"
+            name: "biolinks"
+            widget: "list"
+            summary: '{{fields.links}}'
+            fields: 
+            - {label: "Link Title", name: "linktitle", widget: "string"}
+            - {label: "Link URL", name: "linkurl", widget: "string"}
