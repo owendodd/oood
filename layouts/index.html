@@ -1,8 +1,15 @@
 {{ partial "header.html" . }}
 
-<h1>{{ .Params.title }}</h1>
+<div class="bg">
+    
+</div>
+<video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.bgplaceholder }}">
+    <source src="{{ .Params.bgvideo }}" type="video/mp4">
+  </video>
 
-<p>{{ .Params.blurb }}</p>
+<h1>{{ .Params.name }} <span>{{ .Params.location}}</span></h1>
+
+<p>{{ .Params.bio }}</p>
 
 <h2>{{ .Params.section.heading }}</h2>
 
