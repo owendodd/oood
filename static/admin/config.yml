@@ -35,7 +35,7 @@ collections:
           - label: "Bio Links"
             name: "biolinks"
             widget: "list"
-            summary: '{{fields.links}}'
+            summary: "{{fields.linktitle}}"
             fields: 
             - {label: "Link Title", name: "linktitle", widget: "string"}
             - {label: "Link URL", name: "linkurl", widget: "string"}
