@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 
-<video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.bgplaceholder }}">
-  <source src="{{ .Params.bgvideo }}" type="video/mp4">
+<video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.background.bgplaceholder }}">
+  <source src="{{ .Params.background.bgvideo }}" type="video/mp4">
 </video>
 
 <div class="container">
@@ -12,7 +12,7 @@
       <p>{{ .Params.bio }}</p>
       <div class="button-group">
         {{ range .Params.buttongroup }}
-        <a href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
+        <a href="{{ .Params.buttongroup.linkurl }}">{{ .Params.buttongroup.linktitle }}</a>
         {{ end }}
       </div>
     </div>
@@ -20,7 +20,7 @@
       <footer>
         <div class="link-group">
           {{ range .Params.biolinks }}
-          <a target="_blank" href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
+          <a target="_blank" href="{{ .Params.biolinks.linkurl }}">{{ .Params.biolinks.linktitle }}</a>
           {{ end }}
         </div>
       </footer>
