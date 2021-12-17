@@ -9,7 +9,7 @@
   <header>
     <div class="text">
       <h1>{{ .Params.name }} <span class="cities">{{ .Params.location }}</span></h1>
-      {{ .Params.bio }}
+      <p>{{ .Params.bio }}</p>
       <div class="button-group">
         {{ range .Params.buttongroup }}
         <a href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
@@ -17,14 +17,13 @@
       </div>
     </div>
 
-    <footer>
-      <div class="link-group">
-        <a target="_blank" href="mailto:mail@owendodd.com">Email</a>
-        <a target="_blank" href="https://www.instagram.com/owendodd">Instagram</a>
-        <a target="_blank" href="https://www.are.na/owen-dodd/">Are.na</a>
-        <a target="_blank" href="https://read.cv/owendodd">Read.CV</a>
-      </div>
-    </footer>
+      <footer>
+        <div class="link-group">
+          {{ range .Params.biolinks }}
+          <a target="_blank" href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
+          {{ end }}
+        </div>
+      </footer>
 
   </header>
 

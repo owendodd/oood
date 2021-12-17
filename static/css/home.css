@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "SocialLight";
+  src: url("./webfonts/ABCSocial-Light.woff2") format("woff2"), url("./webfonts/ABCSocial-Light.woff") format("woff");
+}
+
+body {
+  color: #f2f5ff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  background-color: #7790B0;
+  font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 40px;
+  font-size: 22px;
+  line-height: 1.4em;
+  padding: 0;
+  letter-spacing: 0.02em;
+  max-width: 100%;
+  height: 100%;
+}
+
+p {
+  max-width: 24em;
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 18px;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0 0 40px;
+}
+
+span.cities {
+  margin-left: 30px;
+}
+
+a {
+  color: #f2f5ff;
+}
+
+.container {
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: calc(100vh - 60px);
+}
+
+.button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.button-group a {
+  margin: 0 20px 10px 0;
+  font-size: 18px;
+  padding: 2px 8px 2px;
+  background: rgba(112, 113, 119, 0.2);
+  border: 1px solid rgba(0, 26, 144, 0.2);
+  text-decoration: none;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 9px;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+}
+
+.button-group a:hover {
+  background: rgba(155, 155, 155, 0.2);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu {
+  margin-bottom: 5px;
+}
+
+header .menu a {
+  font-size: 18px;
+  padding: 19px 30px 18px;
+  background: rgba(146, 146, 146, 0.2);
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  border-radius: 40px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+footer {
+  margin: 90px 0 0;
+}
+
+footer .link-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .link-group a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 10px 10px 0;
+  font-size: 18px;
+  padding: 2px 8px 2px;
+  border: 1px solid rgba(0, 26, 144, 0);
+  text-decoration: none;
+  border-radius: 9px;
+  -webkit-transition: ease-in-out all 200ms;
+  transition: ease-in-out all 200ms;
+}
+
+footer .link-group a:hover {
+  background: rgba(155, 155, 155, 0.2);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(0, 26, 144, 0.2);
+}
+
+.bg {
+  position: fixed;
+  z-index: -100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: center/cover no-repeat url(/assets/9L9A9082.jpeg);
+}
+
+video {
+  background-color: #7790B0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  .button-group a, footer .link-group a {
+    font-size: 16px;
+  }
+  header .menu a {
+    font-size: 16px;
+    padding: 15px 20px 15px;
+  }
+}
+/*# sourceMappingURL=home.css.map */
