@@ -27,12 +27,12 @@ collections:
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Bio", name: "bio", widget: "text" }
           - label: "Bio Button Group"
-            name: "biobuttongroup"
+            name: "biobuttons"
             widget: "list"
             summary: "{{fields.linktitle}}"
             fields:
-            - {label: "Link Title", name: "linktitle", widget: "string"}
-            - {label: "Link URL", name: "linkurl", widget: "string"}
+            - {label: "Button Title", name: "buttontitle", widget: "string"}
+            - {label: "Button URL", name: "buttonurl", widget: "string"}
           - label: "Background"
             name: "background"
             widget: "object" 

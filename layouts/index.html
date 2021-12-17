@@ -12,7 +12,7 @@
       <p>{{ .Params.bio }}</p>
       <div class="button-group">
         {{ range .Params.buttongroup }}
-        <a href="{{ .Params.buttongroup.linkurl }}">{{ .Params.buttongroup.linktitle }}</a>
+        <a href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
         {{ end }}
       </div>
     </div>
@@ -20,7 +20,7 @@
       <footer>
         <div class="link-group">
           {{ range .Params.biolinks }}
-          <a target="_blank" href="{{ .Params.biolinks.linkurl }}">{{ .Params.biolinks.linktitle }}</a>
+          <a target="_blank" href="{{ .Params.linkurl }}">{{ .Params.linktitle }}</a>
           {{ end }}
         </div>
       </footer>
