@@ -8,8 +8,8 @@ bio: >-
 
   I focus on helping teams develop strong design culture while creating best in class experiences for their users. Currently leading design at Good Dog, previously at The New York Times, and Artsy.
 biobuttons:
-  - buttonurl: mailto:mail@owendodd.com?subject=Case Studies
-    buttontitle: Request case studies
+  - buttontitle: Request case studies
+    buttonurl: mailto:mail@owendodd.com?subject=Case Studies
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/poster.png

@@ -62,9 +62,11 @@ a {
   flex-wrap: wrap;
   margin-top: 30px;
   a {
+    display: flex;
+    align-items: center;
     margin: 0 20px 10px 0;
     font-size: $font-subhead;
-    padding: 2px 8px 2px;
+    padding: 3px 8px 2px;
     background: rgba(112, 113, 119, 0.2);
     border: 1px solid rgba(0, 26, 144, 0.2);
     text-decoration: none;
