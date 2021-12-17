@@ -26,6 +26,13 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Bio", name: "bio", widget: "text" }
+          - label: "Bio Button Group"
+            name: "biobuttongroup"
+            widget: "list"
+            summary: "{{fields.linktitle}}"
+            fields:
+            - {label: "Link Title", name: "linktitle", widget: "string"}
+            - {label: "Link URL", name: "linkurl", widget: "string"}
           - label: "Background"
             name: "background"
             widget: "object" 

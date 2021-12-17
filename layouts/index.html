@@ -1,18 +1,76 @@
-{{ partial "header.html" . }}
+<!DOCTYPE html>
+<html>
 
-<div class="bg">
-    
-</div>
+{{ partial "head.html" . }}
+
+<body>
+
 <video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.bgplaceholder }}">
     <source src="{{ .Params.bgvideo }}" type="video/mp4">
-  </video>
+</video>
 
-<h1>{{ .Params.name }} <span>{{ .Params.location}}</span></h1>
+<div class="container">
 
-<p>{{ .Params.bio }}</p>
+  <header>
+    <div class="text">
+      <h1>{{ .Params.name }} <span class="cities">{{ .Params.location }}</span></h1>
+      {{ .Params.bio }} 
+      <div class="button-group">
+        {{ range .Params.buttongroup }}
+        <a href="{{ .Params.buttonlink }}">{{ .Params.buttontitle }}</a>
+      </div>
+    </div>
 
-<h2>{{ .Params.section.heading }}</h2>
-
-<p>{{ .Params.section.text }}</p>
 
 {{ partial "footer.html" . }}
+
+
+  <!-- <div class="bg"></div> -->
+  <video autoplay loop muted playsinline class="bgVid" poster="./assets/poster.png">
+    <source src="./assets/bg.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+
+    <header>
+      <div class="text">
+        <h1>Owen Dodd <span class="cities">Copenhagen & New York</span></h1>
+        <p>I'm a designer and strategist for digital products. My work experience spans developing design systems, brand
+          identities, and intuitive user experiences.</p>
+        <p>I focus on helping teams develop strong design culture while creating best in class experiences for their
+          users. Currently leading design at Good Dog, previously at The New York Times, and Artsy.</p>
+        <div class="button-group">
+          <!-- <a href="">View selected work</a> -->
+          <a href="mailto:mail@owendodd.com?subject=Case Studies">Request case studies</a>
+        </div>
+      </div>
+
+      <div class="about">
+
+      </div>
+
+      <!-- <div class="menu">
+      <a href="">Product Design</a>
+    </div> -->
+    </header>
+
+    <div class="content">
+
+      <footer>
+        <div class="link-group">
+          <a target="_blank" href="mailto:mail@owendodd.com">Email</a>
+          <a target="_blank" href="https://www.instagram.com/owendodd">Instagram</a>
+          <a target="_blank" href="https://www.are.na/owen-dodd/">Are.na</a>
+          <a target="_blank" href="https://read.cv/owendodd">Read.CV</a>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+
+
+  <script type="text/javascript" src="/assets/js/script.js"></script>
+</body>
+
+</html>
