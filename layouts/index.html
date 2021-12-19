@@ -6,27 +6,19 @@
 
 <div class="container">
 
-  <header>
-    <div class="text">
-      <h1>{{ .Params.name }} <span class="cities">{{ .Params.location }}</span></h1>
-      <p>{{ .Params.bio }}</p>
-      <div class="button-group">
-        {{ range .Params.biobuttons }}
-        <a href="{{ .buttonurl }}">{{ .buttontitle }}</a>
-        {{ end }}
-      </div>
-    </div>
-
-  </header>
-
-  <footer>
-    <div class="link-group">
-      {{ range .Params.biolinks }}
-      <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+  {{ partial "nav.html" . }}
+  
+  <div class="intro">
+    <p>{{ .Params.bio }}</p>
+    <div class="button-group">
+      {{ range .Params.biobuttons }}
+      <a href="{{ .buttonurl }}">{{ .buttontitle }}</a>
       {{ end }}
     </div>
-  </footer>
+  </div>
+
+  {{ partial "footer.html" . }}
 
 </div>
 
-{{ partial "footer.html" . }}
+  

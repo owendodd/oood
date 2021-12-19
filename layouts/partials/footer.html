@@ -1,3 +1,11 @@
+<footer>
+  <div class="link-group">
+    {{ range .Params.biolinks }}
+    <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+    {{ end }}
+  </div>
+</footer>
+
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
