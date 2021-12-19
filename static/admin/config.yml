@@ -46,3 +46,20 @@ collections:
             fields: 
             - {label: "Link Title", name: "linktitle", widget: "string"}
             - {label: "Link URL", name: "linkurl", widget: "string"}
+      - file: "content/_images.md"
+        label: "Images"
+        name: "images"
+        fields:
+          - label: "Image Projects"
+            name: "imageprojects"
+            widget: "list"
+            summary: "{{fields.projecttitle}}"
+            fields:
+            - {label: "Project Title", name: "projecttitle", widget: "string"}
+            - label: "Images"
+              name: "images"
+              widget: "list"
+              summary: "{{fields.caption}}"
+              fields: 
+              - {label: "Caption", name: "caption", widget: "string"}
+              - {label: "Image File", name: "imagefile", widget: "image"}
