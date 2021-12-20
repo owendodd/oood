@@ -1,6 +1,7 @@
 ---
 pagetitle: Images
 pageurl: /images
+navitem: true
 imageprojects:
   - images:
       - caption: Tree
