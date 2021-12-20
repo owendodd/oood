@@ -23,6 +23,8 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
+          - { label: "Page Title", name: "page title", widget: "string" }
+          - { label: "Page URL", name: "pageurl", widget: "string" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Bio", name: "bio", widget: "text" }
@@ -31,14 +33,14 @@ collections:
             widget: "list"
             summary: "{{fields.buttontitle}}"
             fields:
-            - {label: "Button Title", name: "buttontitle", widget: "string"}
-            - {label: "Button URL", name: "buttonurl", widget: "string"}
+            - { label: "Button Title", name: "buttontitle", widget: "string" }
+            - { label: "Button URL", name: "buttonurl", widget: "string" }
           - label: "Background"
-            name: "background"
-            widget: "object" 
+            name: "background"  
+            widget: "object"  
             fields: 
             - { label: "Background Video", name: "bgvideo", widget: "file" }
-            - { label: "Background Placeholder", name: "bgplaceholder", widget: "image"}
+            - { label: "Background Placeholder", name: "bgplaceholder", widget: "image" }
           - label: "Bio Links"
             name: "biolinks"
             widget: "list"
@@ -55,7 +57,9 @@ collections:
             widget: "list"
             summary: "{{fields.projecttitle}}"
             fields:
-            - {label: "Project Title", name: "projecttitle", widget: "string"}
+            - { label: "Page Title", name: "pagetitle", widget: "string" }
+            - { label: "Page URL", name: "pageurl", widget: "string" }
+            - { label: "Project Title", name: "projecttitle", widget: "string"}
             - label: "Images"
               name: "images"
               widget: "list"

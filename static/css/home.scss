@@ -1,49 +1,6 @@
-@mixin p($property, $val) {
-  -webkit-#{$property}: $val;
-  -moz-#{$property}: $val;
-  -ms-#{$property}: $val;
-  #{$property}: $val;
-}
-
-@mixin button {
-  display: flex;
-  align-items: center;
-  margin: 0 20px 10px 0;
-  font-size: $font-subhead;
-  line-height: 1;
-  padding: 10px;
-  background: rgba(173, 175, 182, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  transition: $transitionS;
-}
-
-@mixin linkgroup {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  font-size: $font-subhead;
-  padding: 15px;
-  background: rgba(173, 175, 182, 0.2);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-radius: 25px;
-  line-height: 1;
-}
-
-$transitionS: all 250ms ease-out;
-$transitionM: all 1000ms ease-out;
-
+@import "variables";
 @import "webfonts";
-$font-body: 22px;
-$font-head: 22px;
-$font-subhead: 18px;
+@import "nav";
 
 // General
 body {
@@ -86,42 +43,9 @@ a {
   min-height: 100vh;
 }
 
-.nav {
-  margin: 20px 0 0;
-  display: flex;
-  flex: 0 1 auto;
-  height: 60px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  h1 {
-    margin: 0;
-    span.cities {
-      margin-left: 20px;
-    }
-  }
-  .menubtn {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    @include button();
-    a {
-      // margin: 0 10px;
-      text-decoration: none;
-    }
-    &:hover .menu-content {
-      max-width: 500px;
-    }
-  }
-  .menu-content {
-    max-width: 0;
-    transition: max-width 1s linear;
-    overflow: hidden;
-  }
-}
-
 .intro {
   flex: 1 1 auto;
+  margin-top: 20px;
   .button-group {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +109,6 @@ video {
   }
 
   header {
-    // flex-direction: column;
     .menu a {
       font-size: $font-subhead;
       padding: 15px 20px 15px;

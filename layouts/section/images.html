@@ -3,11 +3,27 @@
 {{ partial "images/nav.html" . }}
 
 {{ range .Params.imageprojects }}
-<div class="slider">
-  {{ range .images }}
-  <div class="slide">
-    <img src="./static/{{ .imagefile }}">
+
+<div class="slidewrapper">
+
+  <div class="controls">
+    <div class="prev">
+      <div class="icon"></div>
+    </div>
+    <div class="next">
+      <div class="icon"></div>
+    </div>
   </div>
+  
+  <div class="slider">
+    {{ range .images }}
+    <div class="slide">
+      <img src="/{{ .imagefile }}">
+    </div>
+    {{ end }}
   {{ end }}
-{{ end }}
+  </div>
+
 </div>
+
+{{ partial "images/footer.html" . }}

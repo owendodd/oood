@@ -1,4 +1,6 @@
 ---
+pagetitle: Product Design
+pageurl: /
 name: Owen Dodd
 location: Copenhagen & New York
 bio: >-

@@ -1,0 +1,33 @@
+.nav {
+    margin: 20px 0 0;
+    display: flex;
+    flex: 0 1 auto;
+    height: 38px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      margin: 0;
+      span.cities {
+        margin-left: 20px;
+      }
+    }
+    .menu {
+      position: absolute;
+      display: flex;
+      top: 20px;
+      right: 40px;
+      a {
+        @include button();
+        text-decoration: none;
+      }
+      &:hover .menu-content {
+        max-width: 500px;
+      }
+    }
+    .menu-content {
+      max-width: 0;
+      transition: max-width 1s linear;
+      overflow: hidden;
+    }
+  }

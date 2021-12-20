@@ -48,7 +48,6 @@ $font-subhead: 18px;
 // General
 body {
   color: #403c00;
-  background-color: #7790b0;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -94,12 +93,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  h1 {
-    margin: 0;
-    span.cities {
-      margin-left: 20px;
-    }
-  }
   .menubtn {
     position: absolute;
     top: 20px;
@@ -120,48 +113,79 @@ a {
   }
 }
 
-.intro {
-  flex: 1 1 auto;
-  .button-group {
+// Slider
+.slidewrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls {
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  .prev {
+    height: 100%;
+    width: 50%;
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    a {
-      @include button();
+    justify-content: flex-start;
+    cursor: pointer;
+    .icon {
+      align-self: center;
+      width: 16px;
+      height: 16px;
+      background-image: url("/assets/cursor-left.svg");
       &:hover {
-        background: rgba(155, 155, 155, 0.2);
+        opacity: 0.1725;
+      }
+    }
+  }
+  .next {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    .icon {
+      align-self: center;
+      width: 16px;
+      height: 16px;
+      background-image: url("/assets/cursor-right.svg");
+      &:hover {
+        opacity: 0.1725;
       }
     }
   }
 }
 
-footer {
-  margin: 40px 0;
-  .link-group {
-    display: flex;
-    a {
-      margin: 0 5px;
-      text-decoration: none;
-      @include button();
-      &:hover {
-        background: rgba(155, 155, 155, 0.2);
-      }
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 0 20px;
+  .slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+    max-height: 90vh;
+    &.show {
+      display: flex;
     }
-    
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
 }
 
-video {
-  background-color: #7790b0;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -100;
-}
 
 // Responsive
 

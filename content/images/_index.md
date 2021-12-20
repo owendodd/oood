@@ -1,4 +1,6 @@
 ---
+pagetitle: Images
+pageurl: /images
 imageprojects:
   - images:
       - caption: Tree

@@ -5,7 +5,6 @@
 
 body {
   color: #403c00;
-  background-color: #7790b0;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -67,14 +66,6 @@ a {
           align-items: center;
 }
 
-.nav h1 {
-  margin: 0;
-}
-
-.nav h1 span.cities {
-  margin-left: 20px;
-}
-
 .nav .menubtn {
   position: absolute;
   top: 20px;
@@ -116,96 +107,118 @@ a {
   overflow: hidden;
 }
 
-.intro {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.intro .button-group {
+.slidewrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.controls {
+  z-index: 10;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls .prev {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer;
+}
+
+.controls .prev .icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 16px;
+  height: 16px;
+  background-image: url("/assets/cursor-left.svg");
+}
+
+.controls .prev .icon:hover {
+  opacity: 0.1725;
+}
+
+.controls .next {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  cursor: pointer;
+}
+
+.controls .next .icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 16px;
+  height: 16px;
+  background-image: url("/assets/cursor-right.svg");
+}
+
+.controls .next .icon:hover {
+  opacity: 0.1725;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 30px;
+  width: 100%;
+  margin: 20px 0 20px;
 }
 
-.intro .button-group a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.slider .slide {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 20px 10px 0;
-  font-size: 18px;
-  line-height: 1;
-  padding: 10px;
-  background: rgba(173, 175, 182, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
+  height: 1200px;
+  max-height: 90vh;
 }
 
-.intro .button-group a:hover {
-  background: rgba(155, 155, 155, 0.2);
-}
-
-footer {
-  margin: 40px 0;
-}
-
-footer .link-group {
+.slider .slide.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-footer .link-group a {
-  margin: 0 5px;
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 20px 10px 0;
-  font-size: 18px;
-  line-height: 1;
-  padding: 10px;
-  background: rgba(173, 175, 182, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
-}
-
-footer .link-group a:hover {
-  background: rgba(155, 155, 155, 0.2);
-}
-
-video {
-  background-color: #7790b0;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -100;
+.slider .slide img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 800px) {
