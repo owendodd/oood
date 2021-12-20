@@ -3,11 +3,10 @@
 
   <div class="menu">
     <a href="" class="selected">{{ .Params.pagetitle }}</a>
-    {{ range where .Site.Pages "Section" "images" }}
-    <div class="menu-content">
-      <a href="/{{ .pageurl }}">{{ .pagetitle }}</a>
-    </div>
+    {{ range .Site.Pages }}
+    <a href="{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
     {{ end }}
+    <div class="menuicon"></div>
   </div>
 
 </div>

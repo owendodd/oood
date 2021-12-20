@@ -24,10 +24,8 @@
       &:hover .menu-content {
         max-width: 500px;
       }
-    }
-    .menu-content {
-      max-width: 0;
-      transition: max-width 1s linear;
-      overflow: hidden;
+      .menuicon {
+        @include button();
+      }
     }
   }
