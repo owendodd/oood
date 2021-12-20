@@ -68,11 +68,26 @@
   max-width: 500px;
 }
 
-.nav .menu-content {
-  max-width: 0;
-  -webkit-transition: max-width 1s linear;
-  transition: max-width 1s linear;
-  overflow: hidden;
+.nav .menu .menuicon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 10px 0;
+  font-size: 18px;
+  line-height: 1;
+  padding: 10px;
+  background: rgba(173, 175, 182, 0.2);
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
 }
 
 body {

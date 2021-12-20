@@ -1,6 +1,6 @@
 ---
-page title: Product Design
-pageurl: /
+pagetitle: Product Design
+pageurl: 
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
@@ -10,7 +10,6 @@ bio: >-
 
 
   I focus on helping teams develop strong design culture while creating best in class experiences for their users. Currently leading design at Good Dog, previously at The New York Times, and Artsy.
-pagetitle: Product Design
 biobuttons:
   - buttontitle: Request case studies
     buttonurl: mailto:mail@owendodd.com?subject=Case Studies
