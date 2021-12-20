@@ -101,6 +101,7 @@ a {
 }
 
 .nav .menubtn a {
+  margin: 0 10px;
   text-decoration: none;
 }
 
@@ -224,4 +225,4 @@ video {
     padding: 15px 20px 15px;
   }
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=images.css.map */

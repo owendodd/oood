@@ -1,1 +1,13 @@
-<h1>Hello</h1>
+{{ partial "images/head.html" . }}
+
+{{ partial "images/nav.html" . }}
+
+{{ range .Params.imageprojects }}
+<div class="slider">
+  {{ range .images }}
+  <div class="slide">
+    <img src="./static/{{ .imagefile }}">
+  </div>
+  {{ end }}
+{{ end }}
+</div>

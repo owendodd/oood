@@ -1,4 +1,4 @@
-{{ partial "head.html" . }}
+{{ partial "home/head.html" . }}
 
 <video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.background.bgplaceholder }}">
   <source src="{{ .Params.background.bgvideo }}" type="video/mp4">
@@ -6,7 +6,7 @@
 
 <div class="container">
 
-  {{ partial "nav.html" . }}
+  {{ partial "home/nav.html" . }}
   
   <div class="intro">
     <p>{{ .Params.bio }}</p>
@@ -17,8 +17,6 @@
     </div>
   </div>
 
-  {{ partial "footer.html" . }}
+  {{ partial "home/footer.html" . }}
 
 </div>
-
-  
