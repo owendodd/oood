@@ -46,7 +46,7 @@ collections:
             fields: 
             - {label: "Link Title", name: "linktitle", widget: "string"}
             - {label: "Link URL", name: "linkurl", widget: "string"}
-      - file: "content/_images.md"
+      - file: "content/images/_index.md"
         label: "Images"
         name: "images"
         fields:
