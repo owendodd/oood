@@ -3,10 +3,8 @@
 
   <div class="menu">
     <a href="" class="selected">{{ .Params.pagetitle }}</a>
-    {{ range .Site.Pages }}
-    {{ if ne .CurrentSection }}
+    {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) .Pages "Section" "images" }}
     <a href="{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
-    {{ end }}
     {{ end }}
     <div class="menuicon"></div>
   </div>

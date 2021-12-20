@@ -13,6 +13,7 @@ collections:
         fields:
           - { label: "Page Title", name: "page title", widget: "string" }
           - { label: "Page URL", name: "pageurl", widget: "string" }
+          - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Bio", name: "bio", widget: "markdown" }
@@ -40,13 +41,14 @@ collections:
         label: "Images"
         name: "images"
         fields:
+          - { label: "Page Title", name: "pagetitle", widget: "string" }
+          - { label: "Page URL", name: "pageurl", widget: "string" }
+          - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - label: "Image Projects"
             name: "imageprojects"
             widget: "list"
             summary: "{{fields.projecttitle}}"
             fields:
-            - { label: "Page Title", name: "pagetitle", widget: "string" }
-            - { label: "Page URL", name: "pageurl", widget: "string" }
             - { label: "Project Title", name: "projecttitle", widget: "string"}
             - label: "Images"
               name: "images"
