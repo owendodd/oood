@@ -85,7 +85,7 @@
 }
 
 .nav .menugroup a.menuitem:hover {
-  background: rgba(155, 155, 155, 0.3);
+  background: rgba(185, 119, 119, 0.3);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -135,7 +135,7 @@
 }
 
 .nav .menuicon:hover {
-  background: rgba(155, 155, 155, 0.3);
+  background: rgba(185, 119, 119, 0.3);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
