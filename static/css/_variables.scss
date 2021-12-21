@@ -1,45 +1,45 @@
 @mixin p($property, $val) {
-  -webkit-#{$property}: $val;
-  -moz-#{$property}: $val;
-  -ms-#{$property}: $val;
-  #{$property}: $val;
-}
-
-@mixin button {
-  display: flex;
-  align-items: center;
-  margin: 0 20px 10px 0;
-  font-size: $font-subhead;
-  line-height: 1;
-  padding: 10px;
-  background: rgba(173, 175, 182, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  transition: $transitionS;
-}
-
-@mixin linkgroup {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: white;
-  font-size: $font-subhead;
-  padding: 15px;
-  background: rgba(173, 175, 182, 0.2);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  border-radius: 25px;
-  line-height: 1;
-}
-
-$transitionS: all 250ms ease-out;
-$transitionM: all 1000ms ease-out;
-
-$font-body: 22px;
-$font-head: 22px;
-$font-subhead: 18px;
+    -webkit-#{$property}: $val;
+    -moz-#{$property}: $val;
+    -ms-#{$property}: $val;
+    #{$property}: $val;
+  }
+  
+  @mixin button {
+    display: flex;
+    align-items: center;
+    font-size: $font-subhead;
+    line-height: 1;
+    padding: 10px;
+    height: 18px;
+    background: rgba(173, 175, 182, 0.2);
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: $transitionS;
+  }
+  
+  @mixin linkgroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-size: $font-subhead;
+    padding: 15px;
+    background: rgba(173, 175, 182, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 25px;
+    line-height: 1;
+  }
+  
+  $transitionS: all 250ms ease-out;
+  $transitionM: all 1000ms ease-out;
+  
+  $font-body: 22px;
+  $font-head: 22px;
+  $font-subhead: 18px;

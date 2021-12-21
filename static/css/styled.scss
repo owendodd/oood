@@ -1,0 +1,118 @@
+@import "variables";
+@import "webfonts";
+@import "nav";
+
+// General
+body {
+  color: #403c00;
+  background-color: #7790b0;
+  font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 40px;
+  font-size: $font-body;
+  line-height: 1.4em;
+  padding: 0;
+  letter-spacing: 0.02em;
+  max-width: 100vw;
+}
+
+p {
+  max-width: 28em;
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: $font-subhead;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.4em;
+  margin: 0 0 40px;
+}
+
+a {
+  color: #403c00;
+}
+
+// Sections
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.intro {
+  flex: 1 1 auto;
+  margin-top: 80px;
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    a {
+      margin: 0 10px 10px 0;
+      @include button();
+      &:hover {
+        background: rgba(155, 155, 155, 0.3);
+      }
+    }
+  }
+}
+
+footer {
+  margin: 40px 0;
+  .link-group {
+    display: flex;
+    a {
+      margin: 0 5px;
+      text-decoration: none;
+      @include button();
+      &:hover {
+        background: rgba(155, 155, 155, 0.3);
+      }
+    }
+    
+  }
+}
+
+video {
+  background-color: #7790b0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+// Responsive
+
+@media screen and (max-width: 800px) {
+  $font-body: 18px;
+  $font-head: 18px;
+  $font-subhead: 16px;
+
+  body {
+    margin: 0 20px;
+    font-size: $font-body;
+  }
+
+  h1 {
+    font-size: $font-head;
+  }
+
+  .button-group a,
+  footer .link-group a {
+    font-size: $font-subhead;
+  }
+
+  header {
+    .menu a {
+      font-size: $font-subhead;
+      padding: 15px 20px 15px;
+    }
+  }
+}

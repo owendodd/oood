@@ -1,5 +1,7 @@
 $(function () {
-    var first_slide  = $(".menubtn"),
-        total_slides = $(".selected");
+
+    $(".nav").hover(function () {
+        $(".menuitem").toggleClass("show");
+    });
   
   });

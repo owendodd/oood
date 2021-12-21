@@ -1,6 +1,6 @@
 ---
 pagetitle: Images
-pageurl: /images
+pageurl: images
 navitem: true
 imageprojects:
   - images:

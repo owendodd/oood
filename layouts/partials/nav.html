@@ -2,11 +2,14 @@
   <h1>{{ .Params.name }} <span class="cities">{{ .Params.location }}</span></h1>
 
   <div class="menu">
-    <a href="" class="selected">{{ .Params.pagetitle }}</a>
     {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }}
-    <a href="{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
+    <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
     {{ end }}
-    <div class="menuicon"></div>
+    <a href="" class="selected">{{ .Params.pagetitle }}</a>
+    <div class="menuicon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </div>
 
 </div>

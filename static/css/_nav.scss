@@ -1,5 +1,8 @@
 .nav {
+    z-index: 10000;
+    position: fixed;
     margin: 20px 0 0;
+    width: calc(100vw - 80px);
     display: flex;
     flex: 0 1 auto;
     height: 38px;
@@ -7,25 +10,44 @@
     justify-content: space-between;
     align-items: center;
     h1 {
-      margin: 0;
-      span.cities {
-        margin-left: 20px;
-      }
+        margin: 0;
+        span.cities {
+            margin-left: 20px;
+        }
     }
     .menu {
-      position: absolute;
-      display: flex;
-      top: 20px;
-      right: 40px;
-      a {
-        @include button();
-        text-decoration: none;
-      }
-      &:hover .menu-content {
-        max-width: 500px;
-      }
-      .menuicon {
-        @include button();
-      }
+        display: flex;
+        padding: 10px 0;
+        top: 10px;
+        right: 40px;
+        a {
+            @include button();
+            text-decoration: none;
+            &:hover {
+                background: rgba(155, 155, 155, 0.3);
+            }
+        }
+        .menuitem {
+            opacity: 0;
+            margin-right: 10px;
+            transition: all 600ms cubic-bezier(.45,.25,.7,1.01);
+            &.show {
+                opacity: 1;
+            }
+        }
+        .menuicon {
+            margin-left: 10px;
+            @include button;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .bar {
+                height: 2px;
+                width: 18px;
+                margin: 3px 0;
+                border-radius: 2px;
+                background-color: #403c00;
+            }
+        }
     }
-  }
+}
