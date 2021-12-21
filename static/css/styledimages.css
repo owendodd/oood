@@ -6,14 +6,12 @@
 .nav {
   z-index: 10000;
   position: fixed;
-  margin: 20px 0 0;
-  width: calc(100vw - 80px);
+  margin: 30px 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
+  left: 0;
+  right: 0;
   height: 39px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -85,7 +83,7 @@
 }
 
 .nav .menugroup a.menuitem:hover {
-  background: rgba(185, 119, 119, 0.3);
+  background: rgba(185, 119, 119, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -135,7 +133,7 @@
 }
 
 .nav .menuicon:hover {
-  background: rgba(185, 119, 119, 0.3);
+  background: rgba(185, 119, 119, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }

@@ -1,10 +1,10 @@
 .nav {
     z-index: 10000;
     position: fixed;
-    margin: 20px 0 0;
-    width: calc(100vw - 80px);
+    margin: 30px 40px 0;
     display: flex;
-    flex: 0 1 auto;
+    left: 0;
+    right: 0;
     height: 39px;
     flex-direction: row;
     justify-content: space-between;
