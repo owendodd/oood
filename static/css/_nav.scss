@@ -20,33 +20,51 @@
         padding: 10px 0;
         top: 10px;
         right: 40px;
-        a {
+    }
+    .menugroup {
+        display: flex;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: all 250ms cubic-bezier(0.45, 0.25, 0.7, 1.01);
+        a.menuitem {
+            margin: 5px;
+            display: flex;
             @include button();
             text-decoration: none;
+            white-space: nowrap;
             &:hover {
                 background: rgba(155, 155, 155, 0.3);
             }
         }
-        .menuitem {
-            opacity: 0;
-            margin-right: 10px;
-            transition: all 600ms cubic-bezier(.45,.25,.7,1.01);
-            &.show {
-                opacity: 1;
-            }
+        &.show {
+            opacity: 1;
+            width: 243px;
         }
-        .menuicon {
-            margin-left: 10px;
-            @include button;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .bar {
-                height: 2px;
-                width: 18px;
-                margin: 3px 0;
-                border-radius: 2px;
-                background-color: #403c00;
+    }
+
+    .menuicon {
+        @include button;
+        display: flex;
+        border-radius: 40px !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        margin: 5px;
+        cursor: pointer;
+        .bar {
+            height: 2px;
+            width: 16px;
+            margin: 2px 2px;
+            border-radius: 2px;
+            background-color: #403c00;
+            transition: all 250ms cubic-bezier(0.45, 0.25, 0.7, 1.01);
+            &.twothird {
+                width: 12px !important;
+            }
+            &.onethird {
+                width: 8px !important;
             }
         }
     }
