@@ -67,12 +67,11 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Intro", name: "intro", widget: "markdown" }
-          - label: "Image Projects"
-            name: "imageprojects"
+          - label: "Product Projects"
+            name: "productprojects"
             widget: "list"
             summary: "{{fields.projecttitle}}"
             fields:
-            - { label: "Project Title", name: "projecttitle", widget: "string"}
             - label: "Images"
               name: "images"
               widget: "list"
