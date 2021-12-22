@@ -12,7 +12,7 @@ collections:
         name: "home"
         fields:
           - { label: "Page Title", name: "page title", widget: "string" }
-          - { label: "Page URL", name: "pageurl", widget: "string" }
+          - { label: "Page URL", name: "pageurl", widget: "string", required: false}
           - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
