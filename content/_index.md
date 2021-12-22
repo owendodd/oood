@@ -1,6 +1,6 @@
 ---
 page title: About
-pageurl: about
+pageurl: ""
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
