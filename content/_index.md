@@ -1,15 +1,11 @@
 ---
-pagetitle: Product Design
-pageurl: 
+page title: About
+pageurl: about
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
-bio: >-
-  I'm a designer and strategist for digital products. My work experience spans
-  developing design systems, brand identities, and intuitive user experiences.
-
-
-  I focus on helping teams develop strong design culture while creating best in class experiences for their users. Currently leading design at Good Dog, previously at The New York Times, and Artsy.
+bio: asdf
+pagetitle: Product Design
 biobuttons:
   - buttontitle: Request case studies
     buttonurl: mailto:mail@owendodd.com?subject=Case Studies
