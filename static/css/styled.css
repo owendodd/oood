@@ -70,7 +70,7 @@
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.2);
+  background: rgba(173, 175, 182, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -83,7 +83,7 @@
 }
 
 .nav .menugroup a.menuitem:hover {
-  background: rgba(185, 119, 119, 0.1);
+  background: rgba(173, 175, 182, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -107,7 +107,7 @@
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.2);
+  background: rgba(173, 175, 182, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -133,7 +133,7 @@
 }
 
 .nav .menuicon:hover {
-  background: rgba(185, 119, 119, 0.1);
+  background: rgba(173, 175, 182, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -228,7 +228,7 @@ a {
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.2);
+  background: rgba(173, 175, 182, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -240,7 +240,7 @@ a {
 }
 
 .intro .button-group a:hover {
-  background: rgba(185, 119, 119, 0.1);
+  background: rgba(173, 175, 182, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -269,7 +269,7 @@ footer .link-group a {
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.2);
+  background: rgba(173, 175, 182, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -281,7 +281,7 @@ footer .link-group a {
 }
 
 footer .link-group a:hover {
-  background: rgba(185, 119, 119, 0.1);
+  background: rgba(173, 175, 182, 0.1);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
