@@ -17,7 +17,7 @@ biobuttons:
     buttonurl: mailto:mail@owendodd.com?subject=Case Studies
 background:
   bgvideo: images/bg.mp4
-  bgplaceholder: images/poster.png
+  bgplaceholder: images/9l9a0011.png
 biolinks:
   - linktitle: Email
     linkurl: mailto:mail@owendodd.com
