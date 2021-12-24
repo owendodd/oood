@@ -286,7 +286,7 @@ footer .link-group a:hover {
           transform: scale(0.95);
 }
 
-video {
+video.bg, img.bg {
   background-color: #7790b0;
   -o-object-fit: cover;
      object-fit: cover;

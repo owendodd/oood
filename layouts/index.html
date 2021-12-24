@@ -1,8 +1,10 @@
 {{ partial "head.html" . }}
 
-<video autoplay loop muted playsinline class="bgVid" poster="static/{{ .Params.background.bgplaceholder }}">
+<!-- <video autoplay loop muted playsinline class="bg" poster="static/{{ .Params.background.bgplaceholder }}">
   <source src="{{ .Params.background.bgvideo }}" type="video/mp4">
-</video>
+</video> -->
+
+<img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="">
 
 <div class="container">
 
