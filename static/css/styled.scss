@@ -4,7 +4,7 @@
 
 // General
 body {
-  color: #403c00;
+  color: rgb(46, 43, 0);
   background-color: #7790b0;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
@@ -108,5 +108,9 @@ video.bg, img.bg {
       font-size: $font-subhead;
       padding: 15px 20px 15px;
     }
+  }
+
+  .intro {
+    margin-top: 100px;
   }
 }
