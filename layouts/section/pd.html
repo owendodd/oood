@@ -5,7 +5,7 @@
     {{ partial "nav.html" . }}
 
     <div class="text">
-        <div>{{ .Params.bio | markdownify }}</div>
+        <div>{{ .Params.intro | markdownify }}</div>
       </div>
 
     {{ range .Params.imageprojects }}
