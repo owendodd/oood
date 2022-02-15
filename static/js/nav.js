@@ -1,9 +1,15 @@
 $(function () {
-
+    
     $(".menu").hover(function () {
-        $(".menugroup").toggleClass("show");
-        $(".menuicon .bar:nth-of-type(2)").toggleClass("twothird");
-        // $(".menuicon .bar:nth-of-type(3)").toggleclass("onethird");
+        var activeLabel = $('.label');
+            shownWidth  = activeLabel.outerWidth();
+            targetWidth = 314 - shownWidth;
+            $('.menugroup').addClass('show').css("width", targetWidth);
+            $(".menuicon .bar:nth-of-type(2)").addClass("twothird");
+            console.log(shownWidth);
+    }, function() {
+        $('.menugroup').removeClass('show').css("width", 0);
+        $(".menuicon .bar:nth-of-type(2)").removeClass("twothird");
     });
-  
-  });
+});
+

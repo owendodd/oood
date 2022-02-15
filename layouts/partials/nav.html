@@ -2,9 +2,8 @@
   <h1><span class="spacer">{{ .Params.name }}</span>{{ .Params.location }}</h1>
 
   <div class="menu">
-    <a href="" class="menuitem">{{ .Params.pagetitle }}</a>
+    <a href="" class="menuitem label">{{ .Params.pagetitle }}</a>
     <div class="menugroup">
-      <!-- <a href="" class="menuitem">{{ .Params.pagetitle }}</a> -->
       {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }} 
       <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
       {{ end }}
