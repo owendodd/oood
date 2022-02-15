@@ -5,12 +5,12 @@ navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
 bio: >-
-  A designer and strategist working on digital products. Experiences spans
+  I'm a designer and strategist working on digital products. My experiences span
   developing design systems, brand identities, and both web and mobile
   experiences.
 
 
-  Currently working as and independent consultant, previously at The New York Times, and Artsy.
+  Currently I'm working as and independent consultant, and was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png
