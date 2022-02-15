@@ -9,7 +9,7 @@ collections:
     files:
       - file: "content/_index.md"
         label: "Home"
-        name: "pd"
+        name: "home"
         fields:
           - { label: "Page Title", name: "pagetitle", widget: "string" }
           - { label: "Page URL", name: "pageurl", widget: "string", required: false}
@@ -49,7 +49,7 @@ collections:
               fields: 
               - {label: "Caption", name: "caption", widget: "string"}
               - {label: "Image File", name: "imagefile", widget: "image"}
-      - file: "content/pd/_index.md"
+      - file: "content/productdesign/_index.md"
         label: "Product Design"
         name: "productdesign"
         fields:
