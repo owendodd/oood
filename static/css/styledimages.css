@@ -25,14 +25,6 @@
           align-items: center;
 }
 
-.nav h1 {
-  margin: 0;
-}
-
-.nav h1 span.cities {
-  margin-left: 20px;
-}
-
 .nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,10 +152,6 @@
   .nav {
     margin: 30px 20px 0;
   }
-  .nav h1 span.cities {
-    margin-left: 0px;
-    display: block;
-  }
 }
 
 body {
@@ -191,7 +179,7 @@ h1 {
   text-align: left;
   font-weight: normal;
   line-height: 1.4em;
-  margin: 0 0 40px;
+  margin: 0;
 }
 
 a {

@@ -10,8 +10,8 @@
 
   {{ partial "nav.html" . }}
   
-  <div class="intro">
-    <p>{{ .Params.bio }}</p>
+  <div class="text">
+    <div>{{ .Params.bio | markdownify }}</div>
     <!-- <div class="button-group">
       {{ range .Params.biobuttons }}
       <a href="{{ .buttonurl }}">{{ .buttontitle }}</a>

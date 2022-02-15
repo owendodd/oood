@@ -19,7 +19,6 @@ body {
 }
 
 p {
-  max-width: 25em;
   margin: 0 0 15px;
 }
 
@@ -28,7 +27,10 @@ h1 {
   text-align: left;
   font-weight: normal;
   line-height: 1.4em;
-  margin: 0 0 40px;
+  margin: 0;
+  span.spacer {
+    margin-right: 20px;
+  }
 }
 
 a {
@@ -43,9 +45,11 @@ a {
   min-height: 100vh;
 }
 
-.intro {
+.text {
   flex: 1 1 auto;
   margin-top: 80px;
+  max-width: 25em;
+  div
   .button-group {
     display: flex;
     flex-wrap: wrap;
@@ -61,16 +65,18 @@ footer {
   margin: 40px 0;
   .link-group {
     display: flex;
+    align-items: center;
+
     a {
       margin: 0 5px;
       text-decoration: none;
       @include button();
     }
-    
   }
 }
 
-video.bg, img.bg {
+video.bg,
+img.bg {
   background-color: #7790b0;
   object-fit: cover;
   position: fixed;
@@ -96,6 +102,9 @@ video.bg, img.bg {
 
   h1 {
     font-size: $font-head;
+    span.spacer {
+      margin-right: 0;
+    }
   }
 
   .button-group a,
@@ -110,7 +119,7 @@ video.bg, img.bg {
     }
   }
 
-  .intro {
+  .text {
     margin-top: 100px;
   }
 }
