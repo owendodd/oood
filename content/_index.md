@@ -1,5 +1,5 @@
 ---
-page title: Home
+pagetitle: Home
 pageurl: null
 navitem: true
 name: Owen Dodd
@@ -11,7 +11,6 @@ bio: >-
 
 
   Currently working as and independent consultant, previously at The New York Times, and Artsy.
-pagetitle: About
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png

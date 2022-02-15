@@ -11,7 +11,7 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
-          - { label: "Page Title", name: "page title", widget: "string" }
+          - { label: "Page Title", name: "pagetitle", widget: "string" }
           - { label: "Page URL", name: "pageurl", widget: "string", required: false}
           - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - { label: "Name", name: "name", widget: "string" }
