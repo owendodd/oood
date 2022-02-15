@@ -1,6 +1,6 @@
 ---
-pagetitle: About
-pageurl: 
+page title: Home
+pageurl: null
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
@@ -11,6 +11,7 @@ bio: >-
 
 
   Currently working as and independent consultant, previously at The New York Times, and Artsy.
+pagetitle: About
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png
