@@ -11,7 +11,6 @@ bio: A designer and strategist working on digital products. Experiences spans
 
   Currently working as and independent consultant, previously at The New York Times, and Artsy.
 pagetitle: Product Design
-biobuttons: []
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png

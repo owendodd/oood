@@ -1,9 +1,5 @@
 {{ partial "head.html" . }}
 
-<!-- <video autoplay loop muted playsinline class="bg" poster="static/{{ .Params.background.bgplaceholder }}">
-  <source src="{{ .Params.background.bgvideo }}" type="video/mp4">
-</video> -->
-
 <img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="">
 
 <div class="container">
@@ -12,11 +8,6 @@
   
   <div class="text">
     <div>{{ .Params.bio | markdownify }}</div>
-    <!-- <div class="button-group">
-      {{ range .Params.biobuttons }}
-      <a href="{{ .buttonurl }}">{{ .buttontitle }}</a>
-      {{ end }}
-    </div> -->
   </div>
 
   {{ partial "footer.html" . }}
