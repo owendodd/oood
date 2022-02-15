@@ -70,5 +70,5 @@ collections:
               widget: "list"
               summary: "{{fields.caption}}"
               fields: 
-              - {label: "Caption", name: "caption", widget: "string"}
+              - {label: "Client", name: "caption", widget: "string"}
               - {label: "Image File", name: "imagefile", widget: "image"}

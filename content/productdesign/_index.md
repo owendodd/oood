@@ -1,5 +1,5 @@
 ---
-pagetitle: Prod
+pagetitle: Product design
 pageurl: product-design
 navitem: true
 name: Owen Dodd
