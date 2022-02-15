@@ -1,9 +1,9 @@
 {{ partial "head.html" . }}
 
-<img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="">
+<img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="" />
 
 <div class="container">
-
+  
   {{ partial "nav.html" . }}
 
   <div class="text">
@@ -17,6 +17,6 @@
     {{ end }}
   </div>
 
-  {{ partial "footer.html" . }}
-
 </div>
+  
+{{ partial "footer.html" . }}

@@ -1,11 +1,11 @@
-@import "variables";
-@import "webfonts";
-@import "nav";
+@import "_variables";
+@import "_webfonts";
+@import "_nav";
 
 // General
 body {
-  color: rgb(46, 43, 0);
-  background-color: #7790b0;
+  color: #403c00;
+  background-color: #fff;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -14,11 +14,12 @@ body {
   font-size: $font-body;
   line-height: 1.4em;
   padding: 0;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
   max-width: 100vw;
 }
 
 p {
+  max-width: 30em;
   margin: 0 0 15px;
 }
 
@@ -39,53 +40,58 @@ a {
 
 // Sections
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.text {
-  flex: 1 1 auto;
-  margin-top: 80px;
-  max-width: 25em;
-  div
-  .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    a {
-      margin: 0 10px 10px 0;
-      @include button();
-    }
-  }
-}
-
-footer {
-  margin: 40px 0;
-  .link-group {
-    display: flex;
-    align-items: center;
-
-    a {
-      margin: 0 5px;
-      text-decoration: none;
-      @include button();
-    }
-  }
-}
-
-video.bg,
-img.bg {
-  background-color: #7790b0;
-  object-fit: cover;
-  position: fixed;
+.slidewrapper {
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .controls {
+    z-index: 10;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    .prev {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      cursor: w-resize;
+    }
+    .next {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      cursor: e-resize;
+    }
+  }
+  .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0 20px;
+    .slide {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      height: 1200px;
+      max-height: 80vh;
+      &.show {
+        display: flex;
+      }
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+  }
 }
 
 // Responsive
@@ -102,9 +108,6 @@ img.bg {
 
   h1 {
     font-size: $font-head;
-    span.spacer {
-      margin-right: 0;
-    }
   }
 
   .button-group a,
@@ -117,9 +120,5 @@ img.bg {
       font-size: $font-subhead;
       padding: 15px 20px 15px;
     }
-  }
-
-  .text {
-    margin-top: 100px;
   }
 }

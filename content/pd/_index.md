@@ -1,6 +1,6 @@
 ---
 pagetitle: Product Design
-pageurl: product-design
+pageurl: pd
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York

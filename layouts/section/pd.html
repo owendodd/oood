@@ -4,7 +4,7 @@
 
     {{ partial "nav.html" . }}
 
-    {{ range .Params.photoprojects }}
+    {{ range .Params.imageprojects }}
 
     <div class="slidewrapper">
 
@@ -24,10 +24,12 @@
     </div>
 
     <div class="text">
-        <div class="client">{{ .Params.client }}</div>
+        <div class="caption">{{ .Params.caption }}</div>
 
     </div>
 
+    {{ end }}
+
 </div>
 
-<script type="text/javascript" src="../js/photo-slider.js"></script>
+{{ partial "footer.html" . }}
