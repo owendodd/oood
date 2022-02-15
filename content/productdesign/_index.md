@@ -10,6 +10,5 @@ intro: >-
   experiences.
 
 
-
   Currently working as and independent consultant, previously at The New York Times, and Artsy.
 ---

@@ -10,9 +10,7 @@ bio: >-
   experiences.
 
 
-
   Currently working as and independent consultant, previously at The New York Times, and Artsy.
-pagetitle: Product Design
 background:
   bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png
