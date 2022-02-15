@@ -68,7 +68,7 @@
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.3);
+  background: rgba(207, 207, 213, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -81,7 +81,7 @@
 }
 
 .nav a.menuitem:hover {
-  background: rgba(173, 175, 182, 0.4);
+  background: rgba(207, 207, 213, 0.4);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -98,7 +98,7 @@
   line-height: 1;
   padding: 11px 10px 10px;
   height: 18px;
-  background: rgba(173, 175, 182, 0.3);
+  background: rgba(207, 207, 213, 0.3);
   text-decoration: none;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -124,7 +124,7 @@
 }
 
 .nav .menuicon:hover {
-  background: rgba(173, 175, 182, 0.4);
+  background: rgba(207, 207, 213, 0.4);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
@@ -155,7 +155,7 @@
 
 body {
   color: #2e2b00;
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;

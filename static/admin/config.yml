@@ -12,23 +12,32 @@ collections:
         name: "home"
         fields:
           - { label: "Page Title", name: "pagetitle", widget: "string" }
-          - { label: "Page URL", name: "pageurl", widget: "string", required: false}
+          - {
+              label: "Page URL",
+              name: "pageurl",
+              widget: "string",
+              required: false,
+            }
           - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
           - { label: "Bio", name: "bio", widget: "markdown" }
           - label: "Background"
-            name: "background"  
-            widget: "object"  
-            fields: 
-            - { label: "Background Placeholder", name: "bgplaceholder", widget: "image" }
+            name: "background"
+            widget: "object"
+            fields:
+              - {
+                  label: "Background Placeholder",
+                  name: "bgplaceholder",
+                  widget: "image",
+                }
           - label: "Bio Links"
             name: "biolinks"
             widget: "list"
             summary: "{{fields.linktitle}}"
-            fields: 
-            - {label: "Link Title", name: "linktitle", widget: "string"}
-            - {label: "Link URL", name: "linkurl", widget: "string"}
+            fields:
+              - { label: "Link Title", name: "linktitle", widget: "string" }
+              - { label: "Link URL", name: "linkurl", widget: "string" }
       - file: "content/photo/_index.md"
         label: "Photo"
         name: "photo"
@@ -41,14 +50,18 @@ collections:
             widget: "list"
             summary: "{{fields.projecttitle}}"
             fields:
-            - { label: "Project Title", name: "projecttitle", widget: "string"}
-            - label: "Images"
-              name: "images"
-              widget: "list"
-              summary: "{{fields.caption}}"
-              fields: 
-              - {label: "Caption", name: "caption", widget: "string"}
-              - {label: "Image File", name: "imagefile", widget: "image"}
+              - {
+                  label: "Project Title",
+                  name: "projecttitle",
+                  widget: "string",
+                }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.caption}}"
+                fields:
+                  - { label: "Caption", name: "caption", widget: "string" }
+                  - { label: "Image File", name: "imagefile", widget: "image" }
       - file: "content/productdesign/_index.md"
         label: "Product Design"
         name: "productdesign"
@@ -64,11 +77,11 @@ collections:
             widget: "list"
             summary: "{{fields.client}}"
             fields:
-            - {label: "Client", name: "client", widget: "string"}
-            - {label: "Description", name: "desc", widget: "string"}
-            - label: "Images"
-              name: "images"
-              widget: "list"
-              summary: "{{fields.imagefile}}"
-              fields: 
-              - {label: "Image File", name: "imagefile", widget: "image"}
+              - { label: "Client", name: "client", widget: "string" }
+              - { label: "Description", name: "desc", widget: "string" }
+              - label: "Images"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.imagefile}}"
+                fields:
+                  - { label: "Image File", name: "imagefile", widget: "image" }

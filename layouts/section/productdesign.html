@@ -8,8 +8,9 @@
         <div>{{ .Params.intro | markdownify }}</div>
     </div>
 
-
-    <h1>Selected work</h1>
+    <div class="subhead">
+        <h1>Selected work</h1>
+    </div>
 
     {{ range .Params.projects }}
 
@@ -27,8 +28,8 @@
         </div>
 
         <div class="caption">
-            <div class="client">{{ .Params.client }}</div>
-            <div class="client">{{ .Params.desc }}</div>
+            <h1 class="client"><span class="spacer">{{ .client }}</span></h1>
+            <h1 class="desc">{{ .desc }}</h1>
         </div>
     </div>
 
