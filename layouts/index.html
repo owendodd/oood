@@ -5,9 +5,16 @@
 <div class="container">
 
   {{ partial "nav.html" . }}
-  
+
   <div class="text">
     <div>{{ .Params.bio | markdownify }}</div>
+  </div>
+
+  <div class="link-group">
+    <h1><span class="spacer">Links</span></h1>
+    {{ range .Params.biolinks }}
+    <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+    {{ end }}
   </div>
 
   {{ partial "footer.html" . }}

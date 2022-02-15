@@ -63,12 +63,13 @@ collections:
           - label: "Product Projects"
             name: "productprojects"
             widget: "list"
-            summary: "{{fields.projecttitle}}"
+            summary: "{{fields.client}}"
             fields:
+            - {label: "Client", name: "client", widget: "string"}
+            - {label: "Description", name: "desc", widget: "string"}
             - label: "Images"
               name: "images"
               widget: "list"
-              summary: "{{fields.caption}}"
+              summary: "{{fields.imagefile}}"
               fields: 
-              - {label: "Client", name: "caption", widget: "string"}
               - {label: "Image File", name: "imagefile", widget: "image"}
