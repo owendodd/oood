@@ -241,7 +241,11 @@ a {
   margin: 80px 20px 20px;
 }
 
-.slidewrapper {
+.project {
+  margin: 0 0 80px;
+}
+
+.project .slidewrapper {
   max-width: 1000px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,7 +258,7 @@ a {
           justify-content: center;
 }
 
-.slidewrapper .slider {
+.project .slidewrapper .slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -269,7 +273,7 @@ a {
   width: 100%;
 }
 
-.slidewrapper .slider img {
+.project .slidewrapper .slider img {
   background-color: #fff;
   border-radius: 20px;
   max-height: 100%;

@@ -71,7 +71,7 @@ collections:
           - { label: "Nav Item", name: "navitem", widget: "boolean" }
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Location", name: "location", widget: "string" }
-          - { label: "Intro", name: "intro", widget: "markdown" }
+          - { label: "Intro", name: "intro", widget: "markdown", required: false }
           - label: "Projects"
             name: "projects"
             widget: "list"
