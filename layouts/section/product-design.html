@@ -1,5 +1,33 @@
 {{ partial "head.html" . }}
 
-{{ partial "nav.html" . }}
+<div class="container">
 
-<script type="text/javascript" src="../js/slider.js"></script>
+    {{ partial "nav.html" . }}
+
+    {{ range .Params.photoprojects }}
+
+    <div class="slidewrapper">
+
+        <div class="controls">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+
+        <div class="slider">
+            {{ range .images }}
+            <div class="slide">
+                <img src="/{{ .imagefile }}">
+            </div>
+            {{ end }}
+        </div>
+
+    </div>
+
+    <div class="text">
+        <div class="client">{{ .Params.client }}</div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/photo-slider.js"></script>

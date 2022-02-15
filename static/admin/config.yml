@@ -30,15 +30,15 @@ collections:
             fields: 
             - {label: "Link Title", name: "linktitle", widget: "string"}
             - {label: "Link URL", name: "linkurl", widget: "string"}
-      - file: "content/images/_index.md"
-        label: "Images"
-        name: "images"
+      - file: "content/photo/_index.md"
+        label: "Photo"
+        name: "photo"
         fields:
           - { label: "Page Title", name: "pagetitle", widget: "string" }
           - { label: "Page URL", name: "pageurl", widget: "string" }
           - { label: "Nav Item", name: "navitem", widget: "boolean" }
-          - label: "Image Projects"
-            name: "imageprojects"
+          - label: "Photo Projects"
+            name: "photoprojects"
             widget: "list"
             summary: "{{fields.projecttitle}}"
             fields:
@@ -50,9 +50,9 @@ collections:
               fields: 
               - {label: "Caption", name: "caption", widget: "string"}
               - {label: "Image File", name: "imagefile", widget: "image"}
-      - file: "content/productdesign/_index.md"
+      - file: "content/product-design/_index.md"
         label: "Product Design"
-        name: "productdesign"
+        name: "product-design"
         fields:
           - { label: "Page Title", name: "pagetitle", widget: "string" }
           - { label: "Page URL", name: "pageurl", widget: "string" }

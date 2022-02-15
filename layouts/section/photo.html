@@ -1,29 +1,34 @@
 {{ partial "head.html" . }}
 
-{{ partial "nav.html" . }}
+<div class="container">
 
-{{ range .Params.imageprojects }}
+  {{ partial "nav.html" . }}
 
-<div class="slidewrapper">
+  {{ range .Params.imageprojects }}
 
-  <div class="controls">
-    <div class="prev"></div>
-    <div class="next"></div>
-  </div>
-  
-  <div class="slider">
-    {{ range .images }}
-    <div class="slide">
-      <img src="/{{ .imagefile }}">
+  <div class="slidewrapper">
+
+    <div class="controls">
+      <div class="prev"></div>
+      <div class="next"></div>
     </div>
-    {{ end }}
-  {{ end }}
+
+    <div class="slider">
+      {{ range .images }}
+      <div class="slide">
+        <img src="/{{ .imagefile }}">
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="text">
+    <div class="client">{{ .Params.client }}</div>
+
   </div>
 
 </div>
 
-<div class="text">
-  <div class="client">{{ .Params.client }}</div>
-</div>
-
-<script type="text/javascript" src="../js/photo-slider.js"></script>   
+<script type="text/javascript" src="../js/photo-slider.js"></script>
