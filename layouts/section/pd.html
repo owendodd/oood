@@ -4,6 +4,10 @@
 
     {{ partial "nav.html" . }}
 
+    <div class="text">
+        <div>{{ .Params.bio | markdownify }}</div>
+      </div>
+
     {{ range .Params.imageprojects }}
 
     <div class="slidewrapper">
