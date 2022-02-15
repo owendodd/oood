@@ -12,7 +12,6 @@ bio: >-
 
   Currently I'm working as and independent consultant working with [Good Dog](https://www.gooddog.com/) and [DOT](https://dinoffentligetransport.dk/). I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
 background:
-  bgvideo: images/bg.mp4
   bgplaceholder: images/9l9a0011.png
 biolinks:
   - linktitle: Email

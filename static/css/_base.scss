@@ -4,7 +4,7 @@
 
 // General
 body {
-    color: rgb(46, 43, 0);
+    color: #2e2b00;
     background-color: rgb(248, 248, 248);
     font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin: 0 40px;
     font-size: $font-body;
-    line-height: 1.4em;
+    line-height: 1.55em;
     padding: 0;
     letter-spacing: 0.02em;
     max-width: 100vw;
@@ -34,7 +34,8 @@ h1 {
 }
 
 a {
-    color: #403c00;
+    color: #2e2b00;
+    text-decoration: none;
 }
 
 
@@ -49,7 +50,14 @@ a {
 .text {
     flex: 1 1 auto;
     margin-top: 80px;
-    max-width: 25em;
+    max-width: 26em;
+    a {
+      text-decoration: none;
+      border-bottom: 1px solid;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
 }
 
 

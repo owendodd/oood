@@ -161,8 +161,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0 40px;
-  font-size: 22px;
-  line-height: 1.4em;
+  font-size: 21px;
+  line-height: 1.55em;
   padding: 0;
   letter-spacing: 0.02em;
   max-width: 100vw;
@@ -185,7 +185,8 @@ h1 span.spacer {
 }
 
 a {
-  color: #403c00;
+  color: #2e2b00;
+  text-decoration: none;
 }
 
 .container {
@@ -204,7 +205,16 @@ a {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-top: 80px;
-  max-width: 25em;
+  max-width: 26em;
+}
+
+.text a {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.text a:hover {
+  opacity: 0.6;
 }
 
 @media screen and (max-width: 800px) {
@@ -316,4 +326,4 @@ a {
   max-height: 100%;
   max-width: 100%;
 }
-/*# sourceMappingURL=pdstyles.css.map */
+/*# sourceMappingURL=productdesignstyles.css.map */
