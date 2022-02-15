@@ -1,45 +1,7 @@
-@import "_variables";
-@import "_webfonts";
-@import "_nav";
+@import "base";
 
-// General
-body {
-  color: #403c00;
-  background-color: #fff;
-  font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0 40px;
-  font-size: $font-body;
-  line-height: 1.4em;
-  padding: 0;
-  letter-spacing: 0.02em; 
-  max-width: 100vw;
-}
 
-p {
-  max-width: 30em;
-  margin: 0 0 15px;
-}
-
-h1 {
-  font-size: $font-subhead;
-  text-align: left;
-  font-weight: normal;
-  line-height: 1.4em;
-  margin: 0;
-  span.spacer {
-    margin-right: 20px;
-  }
-}
-
-a {
-  color: #403c00;
-}
-
-// Sections
-
+// Slider
 .slidewrapper {
   position: absolute;
   top: 0;
@@ -97,28 +59,5 @@ a {
 // Responsive
 
 @media screen and (max-width: 800px) {
-  $font-body: 18px;
-  $font-head: 18px;
-  $font-subhead: 16px;
-
-  body {
-    margin: 0 20px;
-    font-size: $font-body;
-  }
-
-  h1 {
-    font-size: $font-head;
-  }
-
-  .button-group a,
-  footer .link-group a {
-    font-size: $font-subhead;
-  }
-
-  header {
-    .menu a {
-      font-size: $font-subhead;
-      padding: 15px 20px 15px;
-    }
-  }
+  
 }

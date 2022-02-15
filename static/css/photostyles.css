@@ -154,8 +154,8 @@
 }
 
 body {
-  color: #403c00;
-  background-color: #fff;
+  color: #2e2b00;
+  background-color: #f8f8f8;
   font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -169,7 +169,6 @@ body {
 }
 
 p {
-  max-width: 30em;
   margin: 0 0 15px;
 }
 
@@ -181,8 +180,51 @@ h1 {
   margin: 0;
 }
 
+h1 span.spacer {
+  margin-right: 20px;
+}
+
 a {
   color: #403c00;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-top: 80px;
+  max-width: 25em;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0 20px;
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h1 span.spacer {
+    margin-right: 0;
+  }
+  header .menu a {
+    font-size: 16px;
+    padding: 15px 20px 15px;
+  }
+  .text {
+    margin-top: 100px;
+  }
 }
 
 .slidewrapper {
@@ -273,23 +315,5 @@ a {
 .slidewrapper .slider .slide img {
   max-height: 100%;
   max-width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  body {
-    margin: 0 20px;
-    font-size: 18px;
-  }
-  h1 {
-    font-size: 18px;
-  }
-  .button-group a,
-  footer .link-group a {
-    font-size: 16px;
-  }
-  header .menu a {
-    font-size: 16px;
-    padding: 15px 20px 15px;
-  }
 }
 /*# sourceMappingURL=photostyles.css.map */
