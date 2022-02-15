@@ -6,30 +6,30 @@
 
     <div class="text">
         <div>{{ .Params.intro | markdownify }}</div>
-      </div>
-
-    {{ range .Params.imageprojects }}
-
-    <div class="slidewrapper">
-
-        <div class="controls">
-            <div class="prev"></div>
-            <div class="next"></div>
-        </div>
-
-        <div class="slider">
-            {{ range .images }}
-            <div class="slide">
-                <img src="/{{ .imagefile }}">
-            </div>
-            {{ end }}
-        </div>
-
     </div>
 
-    <div class="text">
-        <div class="caption">{{ .Params.caption }}</div>
 
+    <h1>Selected work</h1>
+
+    {{ range .Params.projects }}
+
+    <div class="project">
+        <div class="slidewrapper">
+
+            <div class="slider">
+                {{ range .images }}
+                <div class="slide">
+                    <img src="/{{ .imagefile }}">
+                </div>
+                {{ end }}
+            </div>
+
+        </div>
+
+        <div class="caption">
+            <div class="client">{{ .Params.client }}</div>
+            <div class="client">{{ .Params.desc }}</div>
+        </div>
     </div>
 
     {{ end }}
