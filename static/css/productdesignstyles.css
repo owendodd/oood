@@ -12,7 +12,7 @@
   display: flex;
   left: 0;
   right: 0;
-  height: 39px;
+  height: 49px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -25,13 +25,19 @@
           align-items: center;
 }
 
+.nav .spacer::after {
+  margin-left: 20px;
+  content: "Copenhagen & New York";
+}
+
 .nav .menu {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
-  top: 10px;
-  right: 40px;
+  padding: 0;
+  top: 0;
+  right: 0;
 }
 
 .nav .menugroup {
@@ -119,7 +125,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  margin: 5px 0;
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -149,7 +155,11 @@
 
 @media screen and (max-width: 800px) {
   .nav {
-    margin: 30px 20px 0;
+    margin: 20px 20px 0;
+  }
+  .nav .spacer::after {
+    display: none;
+    content: "CPH & NYC";
   }
 }
 
@@ -176,7 +186,7 @@ h1 {
   font-size: 18px;
   text-align: left;
   font-weight: normal;
-  line-height: 1.4em;
+  line-height: 1.2em;
   margin: 0;
 }
 
@@ -227,6 +237,7 @@ a {
   }
   h1 span.spacer {
     margin-right: 0;
+    display: block;
   }
   header .menu a {
     font-size: 16px;
@@ -284,6 +295,26 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .caption {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0 0 20px;
+  }
+  .caption .spacer {
+    margin-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=productdesignstyles.css.map */

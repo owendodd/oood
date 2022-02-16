@@ -26,7 +26,7 @@ h1 {
     font-size: $font-subhead;
     text-align: left;
     font-weight: normal;
-    line-height: 1.4em;
+    line-height: 1.2em;
     margin: 0;
     span.spacer {
         margin-right: 20px;
@@ -77,6 +77,7 @@ a {
       font-size: $font-head;
       span.spacer {
         margin-right: 0;
+        display: block;
       }
     }
   

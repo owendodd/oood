@@ -32,6 +32,7 @@
 
 .caption {
   display: flex;
+  flex-direction: column;
   margin: 0 20px;
 
 }
@@ -39,5 +40,14 @@
 // Responsive
 
 @media screen and (max-width: 800px) {
+
+  .caption {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 20px;
+    .spacer {
+      margin-bottom: 5px;
+    }
+  }
 
 }

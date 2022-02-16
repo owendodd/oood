@@ -3,7 +3,7 @@
 <img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="" />
 
 <div class="container">
-  
+
   {{ partial "nav.html" . }}
 
   <div class="text">
@@ -11,12 +11,17 @@
   </div>
 
   <div class="link-group">
+
     <h1><span class="spacer">Links</span></h1>
-    {{ range .Params.biolinks }}
-    <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
-    {{ end }}
+
+    <div class="links">
+      {{ range .Params.biolinks }}
+      <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+      {{ end }}
+    </div>
+    
   </div>
 
 </div>
-  
+
 {{ partial "footer.html" . }}

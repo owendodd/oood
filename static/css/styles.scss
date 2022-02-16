@@ -4,8 +4,14 @@
   margin: 40px 0;
   display: flex;
   align-items: center;
+  .links {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   a {
-    margin: 0 5px;
+    margin: 5px;
     text-decoration: none;
     @include button();
   }
@@ -24,4 +30,16 @@ img.bg {
   z-index: -100;
 }
 
+
+@media screen and (max-width: 800px) {
+
+  .link-group {
+    margin: 40px 0 20px;
+    flex-direction: column;
+    align-items: start;
+    .links {
+      margin:10px 0 0 -5px;
+    }
+  }
+}
 
