@@ -5,7 +5,7 @@ navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
 intro: |-
-  Select product design work. \
+  Select product design work\
   Case studies available [upon request](mailto:mail@owendodd.com)
 projects:
   - client: DOT Billetter
