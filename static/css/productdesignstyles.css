@@ -1,6 +1,11 @@
 @font-face {
   font-family: "SocialLight";
-  src: url("./webfonts/ABCSocial-Book-Trial.woff2") format("woff2"), url("./webfonts/ABCSocial-Book-Trial.woff") format("woff");
+  src: url("./webfonts/ABCSocial-Light.woff2") format("woff2"), url("./webfonts/ABCSocial-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SocialBook";
+  src: url("./webfonts/ABCSocial-Book.woff2") format("woff2"), url(" ./webfonts/ABCSocial-Book.woff") format("woff");
 }
 
 .nav {
@@ -166,10 +171,8 @@
 body {
   color: #2e2b00;
   background-color: #F8F8F8;
-  font-family: "SocialLight", -apple-system, BlinkMacSystemFont, Helvetica, Roboto, Arial, sans-serif;
+  font-family: "SocialBook", -apple-system, Arial, sans-serif;
   padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0 40px;
   font-size: 21px;
   line-height: 1.45em;

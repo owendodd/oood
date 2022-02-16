@@ -3,7 +3,7 @@ $(function () {
     $(".menu").hover(function () {
         var activeLabel = $('.label');
             shownWidth  = activeLabel.outerWidth();
-            targetWidth = 284 - shownWidth;
+            targetWidth = 290 - shownWidth;
             $('.menugroup').addClass('show').css("width", targetWidth);
             $(".menuicon .bar:nth-of-type(2)").addClass("twothird");
             console.log(shownWidth);
