@@ -4,7 +4,7 @@ pageurl: productdesign
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
-intro: Selected projects
+intro: ""
 projects:
   - client: The New York Times
     desc: Ink design system for internal CMS applications.
