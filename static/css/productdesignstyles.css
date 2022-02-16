@@ -179,7 +179,7 @@ body {
 }
 
 p {
-  margin: 0 0 15px;
+  margin: 0 0 20px;
 }
 
 h1 {
@@ -187,7 +187,7 @@ h1 {
   text-align: left;
   font-weight: normal;
   line-height: 1.2em;
-  margin: 0;
+  margin: 0 0 0 20px;
 }
 
 h1 span.spacer {
@@ -214,7 +214,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-top: 80px;
+  margin-top: 94px;
   max-width: 26em;
 }
 
@@ -249,7 +249,7 @@ a {
 }
 
 .subhead {
-  margin: 80px 20px 20px;
+  margin: 80px 0 20px;
 }
 
 .project {
@@ -299,7 +299,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 0 20px;
+  margin: 10px 0;
 }
 
 @media screen and (max-width: 800px) {

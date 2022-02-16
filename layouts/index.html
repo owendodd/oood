@@ -11,15 +11,9 @@
   </div>
 
   <div class="link-group">
-
-    <h1><span class="spacer">Links</span></h1>
-
-    <div class="links">
       {{ range .Params.biolinks }}
       <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
       {{ end }}
-    </div>
-    
   </div>
 
 </div>

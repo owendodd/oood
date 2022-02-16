@@ -4,12 +4,9 @@
   margin: 40px 0;
   display: flex;
   align-items: center;
-  .links {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: -5px;
   a {
     margin: 5px;
     text-decoration: none;
