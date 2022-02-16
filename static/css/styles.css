@@ -1,6 +1,6 @@
 @font-face {
   font-family: "SocialLight";
-  src: url("./webfonts/ABCSocial-Light.woff2") format("woff2"), url("./webfonts/ABCSocial-Light.woff") format("woff");
+  src: url("./webfonts/ABCSocial-Book-Trial.woff2") format("woff2"), url("./webfonts/ABCSocial-Book-Trial.woff") format("woff");
 }
 
 .nav {
