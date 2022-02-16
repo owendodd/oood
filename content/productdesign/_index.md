@@ -4,7 +4,7 @@ pageurl: productdesign
 navitem: true
 name: Owen Dodd
 location: Copenhagen & New York
-intro: ""
+intro: Selected work
 projects:
   - client: DOT Billetter
     desc: Quick journeys and redesigned journey detail views
