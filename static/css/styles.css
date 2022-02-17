@@ -170,7 +170,7 @@
 
 body {
   color: #2e2b00;
-  background-color: #F8F8F8;
+  background-color: #f7f6f4;
   font-family: "SocialBook", -apple-system, Arial, sans-serif;
   padding: 0;
   margin: 0 40px;
@@ -236,6 +236,7 @@ a {
     font-size: 18px;
   }
   h1 {
+    margin: 0 0 0 10px;
     font-size: 18px;
   }
   h1 span.spacer {
@@ -247,7 +248,7 @@ a {
     padding: 15px 20px 15px;
   }
   .text {
-    margin-top: 100px;
+    margin: 80px 0 20px;
   }
 }
 
@@ -313,13 +314,6 @@ img.bg {
 @media screen and (max-width: 800px) {
   .link-group {
     margin: 40px 0 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
   }
   .link-group .links {
     margin: 10px 0 0 -5px;
