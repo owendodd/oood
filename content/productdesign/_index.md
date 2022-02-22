@@ -4,8 +4,9 @@ pageurl: productdesign
 navitem: true
 subhead: Copenhagen & New York
 intro: >-
-  I'm a designer working on digital products. My time is spent developing design
-  systems, brand identities, apps, and tools.
+  I'm a product designer working on consumer experiences, mobile apps, and
+  design systems. My experiences span developing design systems, brand
+  identities, and both web and mobile experiences.
 
 
   Currently I'm working as and independent consultant working with [Good Dog](https://www.gooddog.com/) and [DOT](https://dinoffentligetransport.dk/). I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
