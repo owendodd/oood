@@ -69,11 +69,12 @@ a {
 .content {
   margin: 89px 0 0;
   .text {
-    max-width: 28em;
+    max-width: 30em;
     margin: 0;
     a {
       text-decoration: none;
-      border-bottom: 1px solid;
+      color:#007529;
+      transition: $transitionS;
       &:hover {
         opacity: 0.6;
       }
