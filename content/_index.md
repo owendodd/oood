@@ -3,7 +3,7 @@ pagetitle: Home
 pageurl: null
 navitem: true
 subhead: Copenhagen & New York
-bio: " "
+bio: Placeholder
 background:
   bgplaceholder: images/9l9a0011.png
 biolinks:
