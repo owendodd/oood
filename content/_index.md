@@ -3,13 +3,7 @@ pagetitle: Home
 pageurl: null
 navitem: true
 subhead: Copenhagen & New York
-bio: >-
-  I'm a designer and strategist working on digital products. My experiences span
-  developing design systems, brand identities, and both web and mobile
-  experiences.
-
-
-  Currently I'm working as and independent consultant working with [Good Dog](https://www.gooddog.com/) and [DOT](https://dinoffentligetransport.dk/). I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
+bio: Welcome to my homepage
 background:
   bgplaceholder: images/9l9a0011.png
 biolinks:
