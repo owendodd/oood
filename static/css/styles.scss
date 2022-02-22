@@ -1,18 +1,9 @@
 @import "base";
 
-.link-group {
-  margin: 40px 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin-left: -5px;
-  a {
-    margin: 5px;
-    text-decoration: none;
-    @include button();
-  }
+.container {
+  justify-content: space-between;
 }
+
 
 video.bg,
 img.bg {
@@ -30,11 +21,7 @@ img.bg {
 
 @media screen and (max-width: 800px) {
 
-  .link-group {
-    margin: 40px 0 20px;
-    .links {
-      margin:10px 0 0 -5px;
-    }
-  }
+
+
 }
 

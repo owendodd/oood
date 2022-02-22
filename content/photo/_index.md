@@ -2,6 +2,7 @@
 pagetitle: Photo
 pageurl: photo
 navitem: true
+subhead: Photo
 imageprojects:
   - images:
       - caption: Tree

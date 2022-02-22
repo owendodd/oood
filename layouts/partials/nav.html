@@ -1,8 +1,6 @@
 <div class="nav">
-  <h1><span class="spacer">Owen Dodd</span></h1>
-
-  <div class="menu">
-    <a href="" class="menuitem label">{{ .Params.pagetitle }}</a>
+    <div class="menu">
+    <a href="" class="label">{{ .Params.pagetitle }}</a>
     <div class="menugroup">
       {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }} 
       <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
@@ -13,5 +11,4 @@
       <div class="bar"></div>
     </div>
   </div>
-
 </div>

@@ -2,8 +2,7 @@
 pagetitle: Home
 pageurl: null
 navitem: true
-name: Owen Dodd
-location: Copenhagen & New York
+subhead: Copenhagen & New York
 bio: >-
   I'm a designer and strategist working on digital products. My experiences span
   developing design systems, brand identities, and both web and mobile

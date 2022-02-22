@@ -2,18 +2,22 @@
 
 <img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="" />
 
+{{ partial "nav.html" . }}
+
 <div class="container">
 
-  {{ partial "nav.html" . }}
-
-  <div class="text">
-    <div>{{ .Params.bio | markdownify }}</div>
+  <div class="content">
+    <div class="spacer">
+      <h1>Owen Dodd</h1>
+      <h1>{{ .Params.subhead }}</h1>
+    </div>
+    <div class="text">{{ .Params.bio | markdownify }}</div>
   </div>
 
   <div class="link-group">
-      {{ range .Params.biolinks }}
-      <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
-      {{ end }}
+    {{ range .Params.biolinks }}
+    <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+    {{ end }}
   </div>
 
 </div>

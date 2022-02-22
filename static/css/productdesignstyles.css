@@ -11,35 +11,24 @@
 .nav {
   z-index: 10000;
   position: fixed;
-  margin: 30px 40px 0;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 0;
+  top: 0;
   right: 0;
-  height: 49px;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav .spacer::after {
-  margin-left: 20px;
-  content: "Copenhagen & New York";
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav .menu {
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   padding: 0;
   top: 0;
   right: 0;
@@ -49,7 +38,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 5px 0 0;
   width: 0;
   opacity: 1;
   overflow: hidden;
@@ -92,6 +80,37 @@
 }
 
 .nav a.menuitem:hover {
+  background: rgba(207, 207, 213, 0.4);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.nav .label {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1;
+  padding: 11px 10px 10px;
+  height: 18px;
+  background: rgba(207, 207, 213, 0.3);
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  -webkit-transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+  white-space: nowrap;
+}
+
+.nav .label:hover {
   background: rgba(207, 207, 213, 0.4);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
@@ -160,21 +179,22 @@
 
 @media screen and (max-width: 800px) {
   .nav {
-    margin: 20px 20px 0;
+    padding: 15px;
   }
-  .nav .spacer::after {
-    display: none;
-    content: "CPH & NYC";
+  .nav a.menuitem,
+  .nav .menuicon,
+  .nav .label {
+    font-size: 16px;
   }
 }
 
 body {
   color: #2e2b00;
   background-color: #f7f6f4;
-  font-family: "SocialBook", -apple-system, Arial, sans-serif;
+  font-family: "SocialLight", -apple-system, Arial, sans-serif;
   padding: 0;
   margin: 0 40px;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 1.45em;
   padding: 0;
   letter-spacing: 0.01em;
@@ -190,11 +210,37 @@ h1 {
   text-align: left;
   font-weight: normal;
   line-height: 1.2em;
-  margin: 0 0 0 20px;
+  margin: 20px 0;
 }
 
-h1 span.spacer {
-  margin-right: 20px;
+.spacer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+.spacer h1:first-of-type {
+  margin: 20px 20px 20px 0;
+}
+
+.caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0;
+}
+
+.caption h1:first-of-type {
+  margin: 20px 20px 20px 0;
 }
 
 a {
@@ -211,23 +257,72 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 94px 0 20px;
-  max-width: 26em;
+.content {
+  margin: 26px 0;
 }
 
-.text a {
+.content .text {
+  max-width: 28em;
+  margin: 0;
+}
+
+.content .text a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
 
-.text a:hover {
+.content .text a:hover {
   opacity: 0.6;
+}
+
+.link-group {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: -5px;
+}
+
+.link-group a {
+  margin: 5px;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 1;
+  padding: 11px 10px 10px;
+  height: 18px;
+  background: rgba(207, 207, 213, 0.3);
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  -webkit-transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+  transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.link-group a:hover {
+  background: rgba(207, 207, 213, 0.4);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 @media screen and (max-width: 800px) {
@@ -236,28 +331,31 @@ a {
     font-size: 18px;
   }
   h1 {
-    margin: 0 0 0 10px;
-    font-size: 18px;
-  }
-  h1 span.spacer {
-    margin-right: 0;
-    display: block;
-  }
-  header .menu a {
     font-size: 16px;
-    padding: 15px 20px 15px;
   }
-  .text {
-    margin: 80px 0 20px;
+  .content {
+    margin: 22px 0;
   }
-}
-
-.subhead {
-  margin: 80px 0 20px;
+  .spacer, .caption {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .spacer h1, .caption h1 {
+    margin: 0;
+  }
+  .spacer h1:first-of-type, .caption h1:first-of-type {
+    margin: 0;
+  }
+  .link-group a {
+    font-size: 16px;
+  }
 }
 
 .project {
-  margin: 0 0 80px;
+  margin: 40px 0;
 }
 
 .project .slidewrapper {
@@ -293,17 +391,6 @@ a {
   border-radius: 20px;
   max-height: 100%;
   max-width: 100%;
-}
-
-.caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin: 10px 0;
 }
 
 @media screen and (max-width: 800px) {

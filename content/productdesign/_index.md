@@ -2,11 +2,14 @@
 pagetitle: Product Design
 pageurl: productdesign
 navitem: true
-name: Owen Dodd
-location: Copenhagen & New York
-intro: |-
-  Select product design work\
-  Case studies available [upon request](mailto:mail@owendodd.com)
+subhead: Copenhagen & NYC
+intro: >-
+  I'm a designer and strategist working on digital products. My experiences span
+  developing design systems, brand identities, and both web and mobile
+  experiences.
+
+
+  Currently I'm working as and independent consultant working with [Good Dog](https://www.gooddog.com/) and [DOT](https://dinoffentligetransport.dk/). I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
 projects:
   - client: DOT Billetter
     desc: Quick journeys and redesigned journey detail views
@@ -36,4 +39,13 @@ projects:
     desc: 360º video for the Venice Biennale
     images:
       - imagefile: images/editorial-biennale.png
+biolinks:
+  - linktitle: Email
+    linkurl: mailto:mail@owendodd.com
+  - linktitle: Instagram
+    linkurl: https://www.instagram.com/owendodd/
+  - linktitle: Are.na
+    linkurl: https://www.are.na/owen-dodd/
+  - linktitle: Read.cv
+    linkurl: https://read.cv/owendodd
 ---

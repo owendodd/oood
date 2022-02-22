@@ -1,11 +1,18 @@
 {{ partial "head.html" . }}
 
+{{ partial "nav.html" . }}
+
 <div class="container">
 
-    {{ partial "nav.html" . }}
 
-    <div class="text">
-        <div>{{ .Params.intro | markdownify }}</div>
+    <div class="content">
+        <div class="text">
+            <div class="spacer">
+                <h1>Owen Dodd</h1>
+                <h1>{{ .Params.subhead }}</h1>
+            </div>
+            <div>{{ .Params.intro | markdownify }}</div>
+        </div>
     </div>
 
     {{ range .Params.projects }}
@@ -24,12 +31,18 @@
         </div>
 
         <div class="caption">
-            <h1 class="client">{{ .client }}</h1>
-            <h1 class="desc">{{ .desc }}</h1>
+            <h1>{{ .client }}</h1>
+            <h1>{{ .desc }}</h1>
         </div>
     </div>
 
     {{ end }}
+
+    <div class="link-group">
+        {{ range .Params.biolinks }}
+        <a target="_blank" href="{{ .linkurl }}">{{ .linktitle }}</a>
+        {{ end }}
+      </div>
 
 </div>
 
