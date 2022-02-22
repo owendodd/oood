@@ -2,7 +2,7 @@
 pagetitle: Product Design
 pageurl: productdesign
 navitem: true
-subhead: Copenhagen & NYC
+subhead: Copenhagen & New York
 intro: >-
   I'm a designer and strategist working on digital products. My experiences span
   developing design systems, brand identities, and both web and mobile
