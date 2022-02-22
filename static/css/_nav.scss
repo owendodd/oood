@@ -4,11 +4,10 @@
     padding: 30px;
     display: flex;
     top: 0;
-    right: 0;
+    left: 0;
     flex-direction: column;
     .menu {
         display: flex;
-        align-self: flex-end;
         padding: 0;
         top: 0;
         right: 0;
@@ -44,7 +43,7 @@
         border-radius: 40px !important;
         flex-direction: column;
         justify-content: center;
-        align-items: end;
+        align-items: start;
         margin: 5px;
         cursor: pointer;
         .bar {
@@ -60,6 +59,11 @@
             &.onethird {
                 width: 8px !important;
             }
+        }
+        &:hover {
+            transform: scale(1);
+            background: rgba(207, 207, 213, 0.3);
+
         }
     }
 }

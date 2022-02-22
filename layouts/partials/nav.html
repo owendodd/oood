@@ -1,14 +1,14 @@
 <div class="nav">
-    <div class="menu">
-    <a href="" class="label">{{ .Params.pagetitle }}</a>
-    <div class="menugroup">
-      {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }} 
-      <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
-      {{ end }}
-    </div>
+  <div class="menu">
     <div class="menuicon">
       <div class="bar"></div>
       <div class="bar"></div>
     </div>
+    <div class="menugroup">
+      {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }}
+      <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
+      {{ end }}
+    </div>
+    <a href="" class="label">{{ .Params.pagetitle }}</a>
   </div>
 </div>

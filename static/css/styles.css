@@ -16,7 +16,7 @@
   display: -ms-flexbox;
   display: flex;
   top: 0;
-  right: 0;
+  left: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -27,8 +27,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   padding: 0;
   top: 0;
   right: 0;
@@ -146,9 +144,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   margin: 5px;
   cursor: pointer;
 }
@@ -177,6 +175,12 @@
   width: 8px !important;
 }
 
+.nav .menuicon:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  background: rgba(207, 207, 213, 0.3);
+}
+
 @media screen and (max-width: 800px) {
   .nav {
     padding: 15px;
@@ -194,7 +198,7 @@ body {
   font-family: "SocialLight", -apple-system, Arial, sans-serif;
   padding: 0;
   margin: 0 40px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.45em;
   padding: 0;
   letter-spacing: 0.01em;
@@ -263,7 +267,7 @@ a {
 }
 
 .content {
-  margin: 26px 0;
+  margin: 89px 0 0;
 }
 
 .content .text {
@@ -328,7 +332,7 @@ a {
 @media screen and (max-width: 800px) {
   body {
     margin: 0 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   h1 {
     font-size: 16px;
