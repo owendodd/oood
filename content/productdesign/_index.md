@@ -9,7 +9,7 @@ intro: >-
   identities, and both web and mobile experiences.
 
 
-  Currently I'm working as and independent consultant working with [Good Dog](https://www.gooddog.com/) and [DOT](https://dinoffentligetransport.dk/). I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
+  Currently I'm working as the product design lead at [Good Dog](https://www.gooddog.com/) and consulting with early-stage startups. I was previously at [The New York Times](https://www.nytimes.com/), and [Artsy](https://www.artsy.net/).
 projects:
   - client: DOT Billetter
     desc: Quick journeys and redesigned journey detail views
