@@ -5,10 +5,11 @@
       <div class="bar"></div>
     </div>
     <div class="menugroup">
-      {{ range where (where .Site.Pages "Params.pagetitle" "!=" .Params.pagetitle) "Params.navitem" true }}
-      <a class="menuitem" href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
+      {{ range where .Site.Pages "Params.navitem" true }}
+        <div class="menuitem">
+          <a href="/{{ .Params.pageurl }}">{{ .Params.pagetitle }}</a>
+        </div>
       {{ end }}
     </div>
-    <a href="" class="label">{{ .Params.pagetitle }}</a>
   </div>
 </div>

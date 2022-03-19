@@ -36,24 +36,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.nav .menuitem {
+  padding: 0;
+  white-space: nowrap;
   width: 0;
-  opacity: 1;
   overflow: hidden;
   white-space: nowrap;
+  opacity: 0;
   -webkit-transform: scale(0);
           transform: scale(0);
   -webkit-transition: all 300ms cubic-bezier(0.65, 0, 0.35, 1);
   transition: all 300ms cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.nav .menugroup.show {
+.nav .menuitem.show {
+  padding: 5px;
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+  width: auto;
 }
 
-.nav a.menuitem {
-  margin: 5px;
+.nav .menuitem a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,10 +80,9 @@
   border-radius: 10px;
   -webkit-transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
   transition: all 150ms cubic-bezier(0.65, 0, 0.35, 1);
-  white-space: nowrap;
 }
 
-.nav a.menuitem:hover {
+.nav .menuitem a:hover {
   background: rgba(207, 207, 213, 0.4);
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
