@@ -9,19 +9,19 @@ $(function () {
             $(this).addClass('show');
 
             if (nav == page) {
-                // $(this).addClass('show');
+                $(this).addClass('show');
             }
             else {
                 var width = $(this).outerWidth();
                 $(this).attr('data', width);
                 $(this).removeClass('show');
-                $(this).addClass('hide');
+                $(this).addClass('hide').css("width", 0);
             }
         })
 
     });
 
-    function getWidth () {
+    function getWidth() {
         var width = $(this).attr('data');
 
         $(this).css('width', width)
@@ -31,7 +31,11 @@ $(function () {
 
 
     $(".menu").hover(function () {
-        $('.menuitem.hide').addClass('show').getWidth();
+        $('.menuitem.hide').each(function () {
+            var width = $(this).attr('data');
+            $(this).addClass('show').css('width', width);
+        });
+
         $(".menuicon .bar:nth-of-type(2)").addClass("twothird");
 
     }, function () {
