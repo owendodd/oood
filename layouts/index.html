@@ -1,19 +1,16 @@
 {{ partial "head.html" . }}
 
 <img class="bg" src="{{ .Params.background.bgplaceholder }}" alt="" />
+<div class="name">
+  <h1>O.D.</h1>
+</div>
+
 
 {{ partial "nav.html" . }}
 
 <div class="container">
+  <div></div>
   
-
-  <div class="content">
-    <!-- <div class="spacer">
-      <h1>Owen Dodd</h1>
-      <h1>{{ .Params.subhead }}</h1>
-    </div>
-    <div class="text">{{ .Params.bio | markdownify }}</div> -->
-  </div>
 
   <div class="link-group">
     {{ range .Params.biolinks }}
