@@ -6,30 +6,28 @@
 
   {{ range .Params.imageprojects }}
 
-  <div class="slidewrapper">
 
-    <div class="controls">
-      <div class="prev"></div>
-      <div class="next"></div>
+  <div id="fullpage">
+  {{ range .images }}
+    <div class="section">
+      <img data-src="/{{ .imagefile }}">
     </div>
-
-    <div class="slider">
-      {{ range .images }}
-      <div class="slide">
-        <img src="/{{ .imagefile }}">
-      </div>
-      {{ end }}
-    </div>
-
+    {{ end }}
   </div>
 
-  <div class="text">
-    <div class="caption">{{ .Params.caption }}</div>
-
-  </div>
-
-  {{ end }}
+{{ end }}
 
 </div>
 
 {{ partial "footer.html" . }}
+
+<script>
+  new fullpage('#fullpage', {
+    licenseKey: '8FF0A4A9-E2224B80-A0B2DD72-7E7D7007',
+    scrollingSpeed: 900,
+    scrollOverflow: true,
+    css3: true,
+    faddingEffect: true,
+    // easingcss3: cubic-bezier(0.505, 0.290, 0.360, 1.135)
+  });
+</script>
