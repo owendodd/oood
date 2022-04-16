@@ -8,7 +8,7 @@ background:
   bgplaceholder: images/9l9a0011.png
 biolinks:
   - linktitle: Email
-    linkurl: mailto:mail@owendodd.com
+    linkurl: mailto:owen.dodd@gmail.com
   - linktitle: Instagram
     linkurl: https://www.instagram.com/owendodd/
   - linktitle: Are.na
